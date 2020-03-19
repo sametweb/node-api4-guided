@@ -9,6 +9,7 @@ server.get("/", (req, res) => {
 
 server.listen(port, () => {
   console.log(`\n*** Server Running on http://localhost:${port} ***\n`);
+  res.status(200).send("Selamlar");
 });
 
 // CI/CD pipeline stages:
